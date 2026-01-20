@@ -1123,3 +1123,404 @@ section {
         padding: 32px;
     }
 }
+
+/* ============================================
+   SMALL MOBILE (до 480px)
+   ============================================ */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 90px 0 50px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+        margin-bottom: 24px;
+    }
+
+    .hero-buttons {
+        gap: 10px;
+        margin-bottom: 36px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    .hero-stats {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .stat-number {
+        font-size: 28px;
+    }
+
+    .stat-label {
+        font-size: 12px;
+    }
+
+    /* Section Headers */
+    .section-header {
+        margin-bottom: 32px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-tag {
+        font-size: 11px;
+    }
+
+    /* Services */
+    .service-card {
+        padding: 20px;
+    }
+
+    .service-icon {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+
+    .service-card h3 {
+        font-size: 16px;
+    }
+
+    .service-card p {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .service-price {
+        font-size: 13px;
+        padding: 5px 12px;
+    }
+
+    .services-cta {
+        padding: 24px 16px;
+        margin-top: 32px;
+    }
+
+    .services-cta p {
+        font-size: 16px;
+    }
+
+    /* Portfolio - одна колонка на маленьких экранах */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .portfolio-item {
+        aspect-ratio: 16/10;
+    }
+
+    .portfolio-overlay {
+        padding: 16px;
+    }
+
+    .portfolio-tag {
+        font-size: 10px;
+    }
+
+    .portfolio-overlay h4 {
+        font-size: 14px;
+    }
+
+    .portfolio-overlay p {
+        font-size: 12px;
+    }
+
+    .portfolio-cta {
+        margin-top: 28px;
+    }
+
+    /* Calculator */
+    .calculator-card {
+        padding: 16px;
+    }
+
+    .calc-step {
+        margin-bottom: 24px;
+    }
+
+    .calc-step h3 {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    /* Тип ремонта - одна колонка */
+    .calc-options {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .option-card {
+        flex-direction: row;
+        text-align: left;
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .option-icon {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    .option-title {
+        font-size: 15px;
+    }
+
+    .option-desc {
+        font-size: 13px;
+    }
+
+    /* Площадь */
+    .calc-area {
+        padding: 16px;
+    }
+
+    .area-input {
+        width: 90px;
+        padding: 10px 12px;
+        font-size: 20px;
+    }
+
+    .area-unit {
+        font-size: 16px;
+    }
+
+    /* Доп. работы - одна колонка */
+    .calc-extras {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .extra-card {
+        padding: 14px;
+    }
+
+    .extra-icon {
+        font-size: 22px;
+    }
+
+    .extra-title {
+        font-size: 14px;
+    }
+
+    .extra-price {
+        font-size: 12px;
+    }
+
+    /* Результат калькулятора */
+    .calc-result {
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .result-label {
+        font-size: 13px;
+    }
+
+    .result-price {
+        font-size: 28px;
+    }
+
+    .calc-result .btn {
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    /* About */
+    .about-content {
+        gap: 28px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+        margin: 16px 0;
+    }
+
+    .about-features {
+        margin: 20px 0;
+        gap: 12px;
+    }
+
+    .about-features li {
+        font-size: 14px;
+    }
+
+    .feature-icon {
+        font-size: 18px;
+    }
+
+    .about-img-wrapper img {
+        height: 220px;
+    }
+
+    /* Advantages - одна колонка */
+    .advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .advantage-card {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding: 16px 20px;
+        gap: 16px;
+    }
+
+    .advantage-icon {
+        font-size: 28px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    .advantage-card h3 {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .advantage-card p {
+        font-size: 12px;
+    }
+
+    /* CTA */
+    .cta-content h2 {
+        font-size: 22px;
+    }
+
+    .cta-content p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .btn-xl {
+        padding: 16px 28px;
+        font-size: 15px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 36px 0 20px;
+    }
+
+    .footer-content {
+        gap: 24px;
+    }
+
+    .footer-main p {
+        font-size: 13px;
+    }
+
+    .footer-links {
+        gap: 16px;
+    }
+
+    .footer-links a {
+        font-size: 13px;
+    }
+
+    .footer-phone {
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        margin-top: 24px;
+        padding-top: 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+    /* WhatsApp Float */
+    .whatsapp-float {
+        width: 54px;
+        height: 54px;
+        bottom: 16px;
+        right: 16px;
+    }
+
+    .whatsapp-float svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    /* Scroll Indicator */
+    .hero-scroll {
+        bottom: 20px;
+    }
+
+    .scroll-indicator {
+        width: 26px;
+        height: 42px;
+    }
+}
+
+/* ============================================
+   ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ (до 360px)
+   ============================================ */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    .hero-title {
+        font-size: 24px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    .hero-stats {
+        gap: 16px;
+    }
+
+    .stat-number {
+        font-size: 24px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .calc-result {
+        padding: 16px;
+    }
+
+    .result-price {
+        font-size: 24px;
+    }
+
+    .option-card {
+        padding: 12px;
+    }
+
+    .option-icon {
+        font-size: 24px;
+    }
+
+    .option-title {
+        font-size: 14px;
+    }
+}
