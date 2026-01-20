@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Ремонт-Профи - профессиональный ремонт квартир в Бишкеке. Штукатурка, шпаклёвка, кафель, электрика, сантехника. Всё под 90 градусов!">
+    <title>Ремонт-Профи | Ремонт квартир в Бишкеке</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <span class="logo-icon">🔧</span>
+                    <span>Ремонт-Профи</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list" id="navList">
+                    <li><a href="#services" class="nav-link">Услуги</a></li>
+                    <li><a href="#portfolio" class="nav-link">Работы</a></li>
+                    <li><a href="#calculator" class="nav-link">Калькулятор</a></li>
+                    <li><a href="#about" class="nav-link">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content" data-animate="fade-up">
+                <h1 class="hero-title">Ремонт квартир<br>в Бишкеке</h1>
+                <p class="hero-subtitle">Все виды ремонтных работ под ключ. Штукатурка, шпаклёвка, кафель, электрика, сантехника. Ровные углы, аккуратная геометрия.</p>
+                <div class="hero-buttons">
+                    <a href="#calculator" class="btn btn-primary btn-lg">
+                        <span>Рассчитать стоимость</span>
+                    </a>
+                    <a href="https://wa.me/996500245780?text=Здравствуйте! Хочу узнать подробнее об услугах ремонта." class="btn btn-whatsapp btn-lg" target="_blank">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat" data-animate="fade-up" data-delay="100">
+                        <span class="stat-number" data-count="500">0</span>
+                        <span class="stat-label">объектов</span>
+                    </div>
+                    <div class="stat" data-animate="fade-up" data-delay="200">
+                        <span class="stat-number" data-count="8">0</span>
+                        <span class="stat-label">лет опыта</span>
+                    </div>
+                    <div class="stat" data-animate="fade-up" data-delay="300">
+                        <span class="stat-number">90°</span>
+                        <span class="stat-label">точность</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#services" class="scroll-indicator">
+                <span></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Услуги</span>
+                <h2 class="section-title">Все виды ремонтных работ</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-icon">🏗️</div>
+                    <h3>Штукатурка</h3>
+                    <p>Выравнивание стен и потолков. Машинная и ручная штукатурка. Идеально ровные поверхности.</p>
+                    <span class="service-price">от 250 сом/м²</span>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="50">
+                    <div class="service-icon">🎨</div>
+                    <h3>Шпаклёвка</h3>
+                    <p>Финишная отделка под покраску или обои. Идеально гладкие стены без изъянов.</p>
+                    <span class="service-price">от 150 сом/м²</span>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-icon">🖼️</div>
+                    <h3>Обои</h3>
+                    <p>Поклейка всех видов обоев: виниловые, флизелиновые, под покраску, фотообои.</p>
+                    <span class="service-price">от 120 сом/м²</span>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="150">
+                    <div class="service-icon">🔲</div>
+                    <h3>Кладка кафеля</h3>
+                    <p>Укладка плитки на пол и стены. Мозаика, керамогранит. Всё под 90 градусов!</p>
+                    <span class="service-price">от 450 сом/м²</span>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-icon">🔥</div>
+                    <h3>Тёплые полы</h3>
+                    <p>Монтаж водяных и электрических тёплых полов. Комфорт в каждом метре.</p>
+                    <span class="service-price">от 800 сом/м²</span>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="250">
+                    <div class="service-icon">🚪</div>
+                    <h3>Установка дверей</h3>
+                    <p>Монтаж межкомнатных и входных дверей. Аккуратно, быстро, надёжно.</p>
+                    <span class="service-price">от 2 500 сом/шт</span>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="300">
+                    <div class="service-icon">⚡</div>
+                    <h3>Электрика</h3>
+                    <p>Полная замена проводки, монтаж розеток, выключателей, освещения, щитков.</p>
+                    <span class="service-price">от 180 сом/точка</span>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="350">
+                    <div class="service-icon">🚿</div>
+                    <h3>Сантехника</h3>
+                    <p>Установка и замена труб, унитазов, раковин, ванн, душевых кабин, бойлеров.</p>
+                    <span class="service-price">от 15 000 сом</span>
+                </div>
+            </div>
+            <div class="services-cta" data-animate="fade-up">
+                <p>Работы под ключ — от замера до уборки!</p>
+                <a href="https://wa.me/996500245780?text=Здравствуйте! Интересует ремонт под ключ." class="btn btn-primary" target="_blank">Обсудить проект</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Портфолио</span>
+                <h2 class="section-title">Наши работы</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-animate="fade-up" data-delay="0">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Ремонт гостиной" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Гостиная</span>
+                        <h4>Ремонт под ключ</h4>
+                        <p>3-комн. квартира, 85 м²</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-animate="fade-up" data-delay="50">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop" alt="Ремонт ванной" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Ванная</span>
+                        <h4>Кафель + сантехника</h4>
+                        <p>Санузел 6 м²</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-animate="fade-up" data-delay="100">
+                    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&h=400&fit=crop" alt="Ремонт кухни" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Кухня</span>
+                        <h4>Полный ремонт</h4>
+                        <p>Кухня-студия 18 м²</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-animate="fade-up" data-delay="150">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" alt="Ремонт спальни" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Спальня</span>
+                        <h4>Шпаклёвка + обои</h4>
+                        <p>Спальня 14 м²</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-animate="fade-up" data-delay="200">
+                    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&h=400&fit=crop" alt="Укладка плитки" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Кафель</span>
+                        <h4>Укладка плитки</h4>
+                        <p>Коридор + кухня 25 м²</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-animate="fade-up" data-delay="250">
+                    <img src="https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=600&h=400&fit=crop" alt="Ремонт квартиры" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Под ключ</span>
+                        <h4>Капитальный ремонт</h4>
+                        <p>2-комн. квартира, 65 м²</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta" data-animate="fade-up">
+                <a href="https://wa.me/996500245780?text=Здравствуйте! Хочу посмотреть больше примеров работ." class="btn btn-outline" target="_blank">Больше примеров в WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator" id="calculator">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Калькулятор</span>
+                <h2 class="section-title">Рассчитайте стоимость</h2>
+            </div>
+            <div class="calculator-card" data-animate="fade-up">
+                <div class="calc-step active" data-step="1">
+                    <h3>Тип ремонта</h3>
+                    <div class="calc-options">
+                        <label class="calc-option">
+                            <input type="radio" name="repairType" value="cosmetic" data-price="800" data-label="Косметический">
+                            <span class="option-card">
+                                <span class="option-icon">🎨</span>
+                                <span class="option-title">Косметический</span>
+                                <span class="option-desc">от 800 сом/м²</span>
+                            </span>
+                        </label>
+                        <label class="calc-option">
+                            <input type="radio" name="repairType" value="standard" data-price="1500" data-label="Стандартный">
+                            <span class="option-card">
+                                <span class="option-icon">🔨</span>
+                                <span class="option-title">Стандартный</span>
+                                <span class="option-desc">от 1 500 сом/м²</span>
+                            </span>
+                        </label>
+                        <label class="calc-option">
+                            <input type="radio" name="repairType" value="capital" data-price="2500" data-label="Капитальный">
+                            <span class="option-card">
+                                <span class="option-icon">🏠</span>
+                                <span class="option-title">Капитальный</span>
+                                <span class="option-desc">от 2 500 сом/м²</span>
+                            </span>
+                        </label>
+                        <label class="calc-option">
+                            <input type="radio" name="repairType" value="design" data-price="4000" data-label="Под ключ Люкс">
+                            <span class="option-card">
+                                <span class="option-icon">✨</span>
+                                <span class="option-title">Под ключ Люкс</span>
+                                <span class="option-desc">от 4 000 сом/м²</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="calc-step" data-step="2">
+                    <h3>Площадь помещения</h3>
+                    <div class="calc-area">
+                        <div class="area-input-wrapper">
+                            <input type="number" id="areaInput" min="10" max="500" value="50" class="area-input">
+                            <span class="area-unit">м²</span>
+                        </div>
+                        <input type="range" id="areaRange" min="10" max="200" value="50" class="area-range">
+                        <div class="area-hints">
+                            <span>10 м²</span>
+                            <span>200 м²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calc-step" data-step="3">
+                    <h3>Дополнительные работы</h3>
+                    <div class="calc-extras">
+                        <label class="calc-extra">
+                            <input type="checkbox" name="extras" value="plumbing" data-price="25000">
+                            <span class="extra-card">
+                                <span class="extra-icon">🚿</span>
+                                <span class="extra-info">
+                                    <span class="extra-title">Сантехника</span>
+                                    <span class="extra-price">+25 000 сом</span>
+                                </span>
+                            </span>
+                        </label>
+                        <label class="calc-extra">
+                            <input type="checkbox" name="extras" value="electric" data-price="30000">
+                            <span class="extra-card">
+                                <span class="extra-icon">⚡</span>
+                                <span class="extra-info">
+                                    <span class="extra-title">Электрика</span>
+                                    <span class="extra-price">+30 000 сом</span>
+                                </span>
+                            </span>
+                        </label>
+                        <label class="calc-extra">
+                            <input type="checkbox" name="extras" value="warmfloor" data-price="35000">
+                            <span class="extra-card">
+                                <span class="extra-icon">🔥</span>
+                                <span class="extra-info">
+                                    <span class="extra-title">Тёплый пол</span>
+                                    <span class="extra-price">+35 000 сом</span>
+                                </span>
+                            </span>
+                        </label>
+                        <label class="calc-extra">
+                            <input type="checkbox" name="extras" value="doors" data-price="15000">
+                            <span class="extra-card">
+                                <span class="extra-icon">🚪</span>
+                                <span class="extra-info">
+                                    <span class="extra-title">Двери (3 шт)</span>
+                                    <span class="extra-price">+15 000 сом</span>
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="calc-result">
+                    <div class="result-info">
+                        <span class="result-label">Примерная стоимость:</span>
+                        <span class="result-price" id="totalPrice">40 000 сом</span>
+                    </div>
+                    <a href="#" class="btn btn-whatsapp btn-lg" id="sendToWhatsApp" target="_blank">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        <span>Обсудить в WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-animate="fade-right">
+                    <span class="section-tag">О нас</span>
+                    <h2 class="section-title">Работаем по всему Бишкеку</h2>
+                    <p>Мы — команда мастеров с опытом более 8 лет. Выполняем все виды ремонтных работ от штукатурки до установки сантехники. Главное правило — всё делаем под 90 градусов!</p>
+                    <ul class="about-features">
+                        <li>
+                            <span class="feature-icon">📐</span>
+                            <span>Всё под 90° — идеальная геометрия</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">💰</span>
+                            <span>Честные цены без накруток</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">📅</span>
+                            <span>Соблюдаем сроки</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">🧹</span>
+                            <span>Уборка после работ</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/996500245780?text=Здравствуйте! Расскажите подробнее о вашей команде." class="btn btn-primary" target="_blank">Связаться с нами</a>
+                </div>
+                <div class="about-image" data-animate="fade-left">
+                    <div class="about-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&h=800&fit=crop" alt="Ремонт квартиры" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="advantages" id="advantages">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Преимущества</span>
+                <h2 class="section-title">Почему выбирают нас</h2>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-card" data-animate="fade-up" data-delay="0">
+                    <div class="advantage-icon">📐</div>
+                    <h3>Всё под 90°</h3>
+                    <p>Идеальная геометрия во всех работах</p>
+                </div>
+                <div class="advantage-card" data-animate="fade-up" data-delay="100">
+                    <div class="advantage-icon">👷</div>
+                    <h3>Опытные мастера</h3>
+                    <p>Команда специалистов с опытом от 5 лет</p>
+                </div>
+                <div class="advantage-card" data-animate="fade-up" data-delay="200">
+                    <div class="advantage-icon">💵</div>
+                    <h3>Без предоплаты</h3>
+                    <p>Оплата по факту выполненных работ</p>
+                </div>
+                <div class="advantage-card" data-animate="fade-up" data-delay="300">
+                    <div class="advantage-icon">🛠️</div>
+                    <h3>Под ключ</h3>
+                    <p>От замера до финальной уборки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content" data-animate="fade-up">
+                <h2>Готовы начать ремонт?</h2>
+                <p>Напишите в WhatsApp — ответим за 5 минут</p>
+                <a href="https://wa.me/996500245780?text=Здравствуйте! Хочу обсудить ремонт квартиры." class="btn btn-whatsapp btn-xl" target="_blank">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    <span>Написать в WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🔧</span>
+                        <span>Ремонт-Профи</span>
+                    </a>
+                    <p>Профессиональный ремонт квартир в Бишкеке. Все виды работ под ключ.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#services">Услуги</a>
+                    <a href="#portfolio">Работы</a>
+                    <a href="#calculator">Калькулятор</a>
+                    <a href="#about">О нас</a>
+                </div>
+                <div class="footer-contact">
+                    <a href="tel:+996500245780" class="footer-phone">+996 500 245 780</a>
+                    <a href="https://wa.me/996500245780" class="footer-wa" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Ремонт-Профи | Бишкек</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/996500245780?text=Здравствуйте!" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
